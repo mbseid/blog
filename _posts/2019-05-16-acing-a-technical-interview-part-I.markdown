@@ -33,17 +33,16 @@ The technical portion of any engineering interview is a very different skill set
 
 #### Algorithms
 
-* Quick Sort
-* Merge Sort
-* Binary Search
 * Breadth First Search
 * Depth First Search
+* Quick Sort
+* Merge Sort
+* Dynamic Programming
+* Backtracking
+* Binary Search
 * K Way Merge
 * Union Find (Disjoint Set)
 * Bucket Sort
-* Radix Sort
-* Backtracking
-* Dynamic Programming
 
 #### Time and Space Complexity
 

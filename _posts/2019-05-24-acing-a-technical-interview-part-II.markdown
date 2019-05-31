@@ -10,7 +10,7 @@ published: true
 author: Mike Seid
 ---
 
-This week, we will be go over the primary data structures that are used within the coding interview. Most interview questions will not ask you directly about the data structures but will require to use one or more data structures and you must explain how they work. Being able to explain their time/space complexity and operations will be important for success.
+This week we will be go over the primary data structures that are used within the coding interview. Most interview questions will not ask you directly about the data structures but will require to use one or more data structures and you must explain how they work. Being able to explain their time/space complexity and operations will be important for success.
 
 ### Data Structures
 
@@ -30,7 +30,7 @@ Structure that maps keys to values. Using a hash function, the keys can be distr
 
 * Space Complexity: O(n) where n is the number of keys
 * Time Complexity: Get and Set is O(1)
-* Key Metric: Load Factor = `n/k` where n is the number of entires and k is the number of buckets. Higher load loads to more collisions.
+* Key Metric: Load Factor = `n/k` where n is the number of entries and k is the number of buckets. Higher load leads to more collisions.
 * Collisions can be handled through separate chaining or open addressing.
 
 
@@ -87,7 +87,7 @@ head.next = second;
 **Complexities**
 
 * Insert - O(n)
-* Head - O(n)
+* Head - O(1)
 * Tail - O(n) unless there is a tail pointer in which case it's O(1)
 * Search - O(n)
 
@@ -121,8 +121,8 @@ A first in first out data structure. Queues are the most used data structure if 
 
 **Operations**
 
-* enqueue: Add item to the end of the Queue - O(1)
-* dequeue: Takes item off the top of the stack - O(1)
+* enqueue: Add item to the end of the queue - O(1)
+* dequeue: Takes item off the top of the stack- O(n) - Cause: moving all the array items one to the left.
 
 **Javascript**
 
