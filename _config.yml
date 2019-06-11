@@ -4,10 +4,11 @@ email: mbseid@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   My little space on the large internet
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://blog.seid.io" # the base hostname & protocol for your site
+url: "https://mike.seid.io/blog" # the base hostname & protocol for your site
 twitter_username: mbseid
 github_username:  mbseid
 
-# Build settings
-markdown: kramdown
-highlighter: rouge
+permalink: /blog/:title:output_ext
+
+plugins:
+  - jekyll-gist

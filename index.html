@@ -1,23 +1,30 @@
----
-layout: default
----
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Montserrat" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="/css/homepage.css">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <title>Mike Seid - Hello World</title>
+  </head>
+  <body>
+    <div class="wrapper">
+    <div class="container">
+      <header>
+        <h1 class="name">Mike Seid</h1>
+      </header>
+      <article>
+        <p>Howdy, I'm an Organizational Leader and Engineer who brings ideas and concepts to life. Currently, I'm a Senior Engineering Manager at <a href='https://www.capitalone.com/'>Capital One</a> working on their enterprise ML Data Platform. I <a href='/blog'>blog</a> (sometimes) and frequently present at conferences.</p>
+        <p>Previously I was the CTO of <a href='https://www.naytev.com' target="_blank">Naytev</a>, Senior Frontend for <a href="http://www.npr.org" target="_blank">NPR</a> and Full Stack at <a href="https://www.bah.com" target="_blank">BAH</a>.</p>
+      </article>
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+    <footer>
+      <ul class="meta inline-list">
+        <li><a href="http://www.twitter.com/mbseid" target="_blank">twitter/mbseid</a></li>
+        <li><a href="http://www.github.com/mbseid" target="_blank">github/mbseid</a></li>
+      </ul>
+    </footer>
+  </div>
+  </div>
+  </body>
+</html>

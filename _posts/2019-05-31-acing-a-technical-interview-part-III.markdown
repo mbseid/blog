@@ -35,7 +35,7 @@ A tree traversal algorithm iterating through each level of the tree. Uses a queu
 * Space: O(n/2)
 * n is the number of nodes
 
-~~~js
+```js
 class TreeNode{
 	constructor(value){
 		this.value = value;
@@ -62,7 +62,7 @@ function breadthFirstSearch(treeRoot){
 		}
 	}
 }
-~~~
+```
 
 *note: It can be helpful to keep track of rows using a Symbol. This symbol is added pushed onto the queue at the start, then is added again after it's found. Useful for printing out the row.*
 
@@ -76,7 +76,7 @@ Similar to BFS except it goes deep instead of wide. To do this, the algorithm us
 * Space: O(n/2)
 * n is the number of nodes
 
-~~~js
+```js
 class TreeNode{
 	constructor(value){
 		this.value = value;
@@ -103,7 +103,7 @@ function breadthFirstSearch(treeRoot){
 		}
 	}
 }
-~~~
+```
 
 #### Quick Sort
 
@@ -120,7 +120,7 @@ Comparison based sort. Takes the divide and conquer approach to sorting the inpu
   * There is also an in place version of the algorithm which modifies the original input.
 * n is the size of the array
 
-~~~
+```js
 export default class QuickSort extends Sort {
 
   sort(originalArray) {
@@ -164,7 +164,7 @@ export default class QuickSort extends Sort {
     return leftArraySorted.concat(centerArray, rightArraySorted);
   }
 }
-~~~
+```
 
 *note: Helpful visualization to understand what is happen. Especially useful for the in place version. [http://www.algomation.com/algorithm/quick-sort-visualization](http://www.algomation.com/algorithm/quick-sort-visualization)*
 
@@ -179,7 +179,7 @@ General purpose sort. Takes each element and merges them together to build a lar
   * There is also an in place version of the algorithm which modifies the original input.
 * n is the size of the array
 
-~~~
+~~~js
 export default class MergeSort extends Sort {
   sort(originalArray) {
     // If array is empty or consists of one element then return this array since it is sorted.
@@ -269,7 +269,7 @@ Finds all, optimal, or first solution to problems by incrementally building cand
 
 **Complexity**: Depends on the problem but generally O(n!)
 
-~~~
+```js
 var permute = function(nums) {
     let list = [];
 
@@ -293,7 +293,7 @@ function backtrack(list, tempList, nums){
         }
     }
 }
-~~~
+```
 
 #### Binary Search
 
@@ -301,7 +301,7 @@ Finds the target position within a **sorted array**. Jumps around the array by c
 
 **Complexity:** Time: O(log n)
 
-~~~
+```js
 export default function binarySearch(sortedArray, seekElement, comparatorCallback) {
   // These two indices will contain current array (sub-array) boundaries.
   let startIndex = 0;
@@ -331,7 +331,7 @@ export default function binarySearch(sortedArray, seekElement, comparatorCallbac
   // Return -1 if we have not found anything.
   return -1;
 }
-~~~
+```
 
 #### K Way Merge
 
@@ -344,7 +344,7 @@ Algorithm designed to sort multiple sorted lists. If two lists are provided, thi
 * n is the length of the input arrays
 * k is the amount of arrays being merged
 
-~~~
+```js
 function kwayMerge(arrays){
 
 	let pq = new PriortyQueue(); // Let's assume we have this already built and we are importing it.
@@ -380,7 +380,7 @@ function kwayMerge(arrays){
 
 	return output;
 }
-~~~
+```
 
 #### Union Find (Disjoint Set)
 
