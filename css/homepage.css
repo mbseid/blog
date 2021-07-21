@@ -58,14 +58,6 @@ p {
 article {
   padding: 60px;
 }
-article::before {
-  content: '\2619';
-  position: relative;
-  top: 0;
-  left: -30px;
-  color: #0068FF;
-  font-size: 34px;
-}
 article::after {
   content: '\2A55\2A55\2A55\2A55';
   position: relative;
